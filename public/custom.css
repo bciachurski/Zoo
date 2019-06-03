@@ -271,3 +271,14 @@ p.opis-panel {
     margin-right: 20%;
     text-align: justify;
 }
+ul.lista-panel {
+    margin-top: 23px;
+    margin-left: 12px;
+    list-style-type: square;
+}
+ul.lista-panel li a {
+    font-size: 16px;
+    line-height: 34px;
+    color: #3f8e5b !important;
+    font-weight: 600;
+}

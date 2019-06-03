@@ -30,6 +30,7 @@ Route::get('/about', 'PagesController@about');
 
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/panel', 'PagesController@panel');
+	Route::get('/zamow', 'PagesController@zamow');
     Route::auth();
 });
 

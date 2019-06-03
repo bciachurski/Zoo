@@ -9,6 +9,13 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>'contact']);
+    }
+
+
     public function contact()
     {
     	return view('pages.contact');
@@ -21,5 +28,9 @@ class PagesController extends Controller
     public function panel()
     {
     	return view ('panel');
+    }
+    public function zamow()
+    {
+        return view ('zamowienie');
     }
 }
