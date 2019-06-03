@@ -257,3 +257,17 @@ a, .btn-link {
 .static-page-content  h3 {
 	margin: 0;
 }
+.box-bialy {
+    background: #fff;
+    padding: 10px;
+}
+h2.h2-panel {
+    margin-left: 30px;
+}
+p.opis-panel {
+    margin-top: 25px;
+}
+.block-right {
+    margin-right: 20%;
+    text-align: justify;
+}
