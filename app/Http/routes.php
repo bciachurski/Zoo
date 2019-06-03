@@ -30,7 +30,10 @@ Route::get('/about', 'PagesController@about');
 
 Route::group(['middleware' => ['web']], function () {
 	Route::get('/panel', 'PagesController@panel');
+	Route::post('/zamow', 'PagesController@store');
 	Route::get('/zamow', 'PagesController@zamow');
+	Route::get('/historia', 'PagesController@historia');
+
     Route::auth();
 });
 

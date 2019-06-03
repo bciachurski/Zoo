@@ -2,17 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\ticket;
 
 class PagesController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware('auth', ['except'=>'contact']);
+        $this->middleware('auth', ['only'=>['panel','zamow']]);
     }
 
 
@@ -32,5 +33,16 @@ class PagesController extends Controller
     public function zamow()
     {
         return view ('zamowienie');
+    }
+     public function historia()
+    {
+        $tickets = ticket::latest()->get();
+        return view ('historia')->with('tickets',$tickets);
+    }
+    public function store()
+    {
+        $input = Request::all();
+        ticket::create($input);
+        return view('panel');
     }
 }

@@ -46,13 +46,12 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-              
+               
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
-                        <li><a href="/login">Zaloguj</a></li>
-                        <li><a href="/register">Rejestracja</a></li>
+                        <li><a href="/logout">Wyloguj</a></li>
                 </ul>
             </div>
         </div>

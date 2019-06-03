@@ -282,3 +282,15 @@ ul.lista-panel li a {
     color: #3f8e5b !important;
     font-weight: 600;
 }
+.clearboth{clear:both;}
+.upp {
+    margin-top: 40px;
+}
+h1.marg {
+    margin-left: 13px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+h1 {
+    font-size: 30px;
+}
